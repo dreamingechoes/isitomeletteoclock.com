@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='x-ua-compatible' content='ie=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <title><%= current_page.data.title %></title>
+    <%= stylesheet_link_tag :site %>
+    <%= javascript_include_tag :site %>
+  </head>
+  <body>
+    <div id='wrapper'>
+      <div id='main'>
+        <header id='header'> <%= yield %> </header>
+
+        <footer id='footer'>
+          <span class='copyright'>copyright &copy;
+            <a href='http://dreamingecho.es'>dreamingechoes</a></span>
+            · inspired by <a href="http://isitbeeroclock.com/">isitbeeroclock.com</a>
+        </footer>
+      </div>
+    </body>
+  </html>
